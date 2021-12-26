@@ -74,13 +74,27 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    animation: neon 0.3s ease 2.5s forwards;
 }
 
-@keyframes neon {
+@keyframes neon-up {
     100% {
-        opacity: 1;
+        opacity: 0.8;
+    }
+}
+@keyframes neon-bottom {
+    100% {
+        opacity: 0.5;
     }
 }
 
+
+.neon up {
+    opacity: 0;
+    filter: blur(8px);
+    animation: neon-up 0.3s ease 2.5s forwards;
+}
+.neon .bottom {
+    opacity: 0;
+    filter: blur(25px);
+    animation: neon-bottom 0.3s ease 2.5s forwards;
+}
