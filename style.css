@@ -25,13 +25,13 @@ body {
 }
 .third path{
     stroke-dasharray: 900;
-    stroke-dashoffset: -900;
+    stroke-dashoffset: 900;
     animation: third 2s linear 0s forwards;
 }
 
 @keyframes third {
     100% {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 1800;
     }
 }
 
